@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Love at First Bite — Menu</title>
+  <meta name="description" content="Digital menu for Love at First Bite — choose your language to view the menu.">
+  <style>
+    :root {
+      --bg: #F8EDEB;
+      --accent: #F7D6E0;
+      --accent-hover: #F3C7D1;
+      --text: #5C3B2E;
+      --muted: #A3867C;
+      --shadow: rgba(92, 59, 46, 0.15);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #FFF 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    }
+    .wrap {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+    }
+    .card {
+      width: 100%;
+      max-width: 560px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+      padding: 28px;
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      margin: 12px auto 16px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 9999px;
+      object-fit: cover;
+      background: var(--bg);
+    }
+    h1 { margin: 6px 0 4px; font-size: 1.6rem; }
+    p.sub { margin: 0 0 18px; color: var(--muted); font-size: .98rem; }
+    .btns {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      border: 0;
+      border-radius: 14px;
+      padding: 14px 16px;
+      text-decoration: none;
+      background: var(--accent);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 1.06rem;
+      box-shadow: 0 8px 18px var(--shadow);
+      transition: transform .08s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover {
+      background: var(--accent-hover);
+      box-shadow: 0 10px 22px var(--shadow);
+      transform: translateY(-1px);
+    }
+    .flag { font-size: 1.15rem; line-height: 1; }
+    .footer {
+      margin-top: 18px;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+    .note {
+      margin-top: 4px;
+      font-size: .8rem;
+      color: var(--muted);
+      opacity: .9;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <img src="logo.png" alt="Love at First Bite logo" class="logo" onerror="this.style.display='none'">
+      <h1>Love at First Bite</h1>
+      <p class="sub">Bitte wähle eine Sprache · Please choose your language</p>
+      <div class="btns">
+        <a class="btn" href="https://drive.google.com/file/d/1HdybS4uWPu2QZRY5mPIWWo2T79AJcfZU/view?usp=drive_link" target="_blank">
+          <span class="flag">🇩🇪</span> Deutsche Speisekarte
+        </a>
+        <a class="btn" href="https://drive.google.com/file/d/12lMIv42c1uGo3OCyOKNzapWqGjD68jUY/view?usp=drive_link" target="_blank">
+          <span class="flag">🇬🇧</span> English Menu
+        </a>
+      </div>
+      <div class="footer">
+        Kollwitzstraße 42 · Berlin · @loveatfirstbite_berlin
+        <div class="note">QR once, update anytime — replace the PDF links without changing the code.</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
